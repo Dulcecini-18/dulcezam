@@ -3,6 +3,13 @@
           <head lang="es">
                  <meta charset="utf-8" />
                  <title> Blog Historia San Antonio</title>
+       
+                       <style type="text/css">
+                            body {
+                       
+                                   background-color:#F78BD2}
+                               h2{ color:blue}
+                          </style>
            </head>
            <body>
                  <table>
@@ -146,29 +153,35 @@
 
 			<tr>
 					<td>
-						<!-- aquí va el codigo de llenado de los textos-->
+						<!-- Queremos conocer tu opinion-->
                                                    <form action="·" method="post">
-                             <p> Nombre: <input type="text" name="usuario"></p>
-                             <p> Apellido Paterno:<input type="text" name="AP" SIZE="30" maxlength="30></p> 
-                             <p> Apellido Materno:<input type="text" name="AM" SIZE="30" maxlength="30></p> 
-                             <p> Selecciona tu edad:<input type="number" name="Edad" min="15" max="100" plaseholder="15"
-
-                             <p> Localidad:<input type="text" name="Localidad" SIZA="18" maxlength="2"></p>
-                             <p> Sexo: hombre<input type="radio" name="Edad" name="sexo" value="h"></p>
-                             <p> Sexo: mujer<input type="radio" name="Edad" name="sexo" value="m"></p>
-                                    Otro:<input type="radio" name="Edad" name="sexo" value="otro"></p>
-                             <p> Email:<input type="email" name="correo" multiple></p>
-                            
-                             <!- Boton de enviar...>
-                             <hr>
-                             <p> <input type="submit" value="Enviar"></p>
-                             <!- Boton de borrar ...>
-                             <hr>
-                             <p> <input type="submit" value="Borrar"></p>  
-                              
-					</td>
-                               </tr>
-                                </from> 
+                   <p> Nombre y Apellido:
+                   <input type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Escribe aqui tu nombre y apellido"
+                    required
+                    minlegth="3"
+                    maxlength="50"
+                    pattern="[A-Za-zÀ-ÿ\s]+"
+                    title="El nombre solo debe contener letras y espacios"
+                    >
+                    </p>  
+                    <p> Email:<input type="Email" id="email" name="email" required></p>
+                    <p> Escribe tus comentarios (maximo 500 caracteres):</p>
+                                   <textarea
+                                   required
+                                   maxlength="500"
+                                   rows="5" cols="60"
+                                   placeholder="Escribe aqui tus comentarios..">
+                                   </textarea>
+    
+                    <!...Boton enviae...>
+                      <hr>
+                    <p><input type="submit" value="Enviar"></p>
+                   <!...Boton de borrar...>
+                   <button type="reset">Borrar datos</button>
+                    </from>
 
 
 
